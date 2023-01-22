@@ -2,3 +2,25 @@ body{
     background-color: grey;
     text-align: center;
 }
+.btns{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+.btnsText{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.scores{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.feed, .sleep, .play{
+    border: 1px solid black ;
+}
