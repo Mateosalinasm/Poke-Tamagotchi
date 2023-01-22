@@ -35,17 +35,35 @@ function petFeed (e){
     e.preventDefault()  
     this.hunger -= 1  
     console.log(`${newPet.name} has been fed and feels much better! Hunger level = ${this.hunger}` )
+    if(this.hunger > 5){
+        alert(`${this.name} is getting awfully hungry, feed him before he gets sick!`)
+    } else if(this.hunger < 0){
+        this.hunger = 0
+    } else if(this.hunger > 10){
+        alert(`${this.name} starved to death ☠️`)
+    }
     
 }
 
 function petPlay (e){
     e.preventDefault()   
     console.log(`${newPet.name} has played and had so much fun! Boredom level = ${this.boredom}` )
+    if(this.boredom > 5){
+        alert(`${this.name} is getting bored, play with him before he gets depressed!`)
+    }else if(this.boredom > 10){
+        alert(`${this.name} got depressed and died ☠️`)
+    }
+
 }
 
 function petSleep (e){
     e.preventDefault()    
     console.log(`${newPet.name} has slept and feels refreshed! Fatigue level = ${this.fatigue}` )
+    if(this.fatigue > 5){
+        alert(`${this.name} is getting sleepy, let him take a nap before he gets insomnia!`)
+    }else if(this.fatigue > 10){
+        alert(`${this.name} got insomnia and died ☠️`)
+    }
 }
 
 //Counters
