@@ -1,11 +1,33 @@
+
 body{
     background-color: grey;
     text-align: center;
+    background: url('https://preview.redd.it/d9spuwer2c491.png?width=1050&format=png&auto=webp&v=enabled&s=f6b6908ea6b25b4914c6aadce02a54ed064f4ae9') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+      
+}
+.title{
+
+    margin-top: 60px;
+    
+}
+#name{
+    font-family: 'Press Start 2P', cursive;
+    color: #FF9F01;
+    text-shadow: #2A1702 3px 4px 1px;
+    font-size: 50px;
+    
+}
+.start{
+    margin-top: 30px;
 }
 .btns{
     display: flex;
     justify-content: space-evenly;
-    
+    margin-top: 50px;
     
 }
 .btnsText{
@@ -22,5 +44,19 @@ body{
     justify-content: space-evenly;
 }
 .feed, .sleep, .play{
+   
     border: 1px solid black ;
+}
+
+.egg, .charmander{
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+}
+
+h6{
+    font-family: 'Press Start 2P', cursive;
+    color: #2A1702;
+    text-shadow: #FF9F01 1px 1px 1px;
+    font-size: 15px;
 }

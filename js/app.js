@@ -1,12 +1,10 @@
 
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() { //This lets the page load first to prevent the prompts to lag
 //Display Hunger, Play, Sleep
     const hungerScore = document.querySelector('.hungerScore')
     const playScore = document.querySelector('.playScore')
     const sleepScore = document.querySelector('.sleepScore')
-
-
+    
 
 //Class
     class Tamagotchi {
@@ -27,28 +25,31 @@ document.addEventListener("DOMContentLoaded", function() {
     
     }
 
-    let tama = this.name
-    tama = prompt('What\'s your Tamagotchis name?').toUpperCase()
-    const nameID = document.querySelector('#name')
-    nameID.innerHTML = `${tama}`
-    alert(`Your new friend ${tama} is born! Take good care of them`)
+        const petName = prompt('What\'s your Tamagotchis name?').toUpperCase()
+        const newPet = new Tamagotchi(petName)
+        const nameID = document.querySelector('#name')
+        nameID.innerHTML = `${petName}`
+        alert(`Your new friend ${petName} is born! Take good care of them`)
+     
+       
+    
+    // let tama = this.name
+    // tama = prompt('What\'s your Tamagotchis name?').toUpperCase()
+    // const nameID = document.querySelector('#name')
+    // nameID.innerHTML = `${tama}`
+    // alert(`Your new friend ${tama} is born! Take good care of them`)
 
-//New Pet
-
-    const newPet = new Tamagotchi(tama)
-
-
-//Functions
+    //Activity Functions
     function petFeed (e){
         e.preventDefault()  
         newPet.hunger--  
         console.log(`${newPet.name} has been fed and feels much better! Hunger level = ${newPet.hunger}` )
         if(newPet.hunger === 5){
-            alert(`${tama} is getting awfully hungry, feed him before he gets sick!`)
+            alert(`${petName} is getting awfully hungry, feed him before he gets sick!`)
         } else if(newPet.hunger < 0){
             newPet.hunger === 0
         } else if(newPet.hunger === 10){
-            alert(`${tama} starved to death ☠️`)
+            alert(`${petName} starved to death ☠️`)
         }
         
     }
@@ -58,11 +59,11 @@ document.addEventListener("DOMContentLoaded", function() {
         newPet.play--   
         console.log(`${newPet.name} has played and had so much fun! Boredom level = ${newPet.play}` ) 
         if(newPet.play === 5){
-            alert(`${tama} is getting bored, play with him before he gets depressed!`)
+            alert(`${petName} is getting bored, play with him before he gets depressed!`)
         } else if(newPet.play < 0){
             newPet.play === 0
         } else if(newPet.play === 10){
-            alert(`${tama} got depressed and died ☠️`)
+            alert(`${petName} got depressed and died ☠️`)
         }
 
     }
@@ -72,23 +73,34 @@ document.addEventListener("DOMContentLoaded", function() {
         newPet.sleep--    
         console.log(`${newPet.name} has slept and feels refreshed! Fatigue level = ${newPet.sleep}` )
         if(newPet.sleep === 5){
-            alert(`${tama} is getting sleepy, let him take a nap before he gets insomnia!`)
+            alert(`${petName} is getting sleepy, let him take a nap before he gets insomnia!`)
         } else if(newPet.sleep < 0){
             newPet.sleep === 0
         } else if(newPet.sleep === 10){
-            alert(`${tama} got insomnia and died ☠️`)
+            alert(`${petName} got insomnia and died ☠️`)
         }
     }
+
+    function evolution(e){
+        e.preventDefault()
+        setTimeout(() => {
+            document.querySelector('.egg').src = 'js/images/toppng.com-okemon-charmander-png-high-quality-image-cute-charmander-1105x1061.png'
+        }, 20000);
+    } //NEED TO GET THIS FUNCTION TO WORK!!!
+    
+    //Evolution
+
+    
+    
 
 //Buttons
     let feed = document.querySelector('.feed')
     let play = document.querySelector('.play')
     let sleep = document.querySelector('.sleep')
-
+    
 //Event Listeners
-    feed.addEventListener('click', petFeed)
-    play.addEventListener('click', petPlay)
-    sleep.addEventListener('click', petSleep)
-
+feed.addEventListener('click', petFeed)
+play.addEventListener('click', petPlay)
+sleep.addEventListener('click', petSleep)
 
 })
