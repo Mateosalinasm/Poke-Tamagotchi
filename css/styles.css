@@ -1,6 +1,5 @@
 
 body{
-    background-color: grey;
     text-align: center;
     background: url('https://preview.redd.it/d9spuwer2c491.png?width=1050&format=png&auto=webp&v=enabled&s=f6b6908ea6b25b4914c6aadce02a54ed064f4ae9') no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -9,60 +8,107 @@ body{
     background-size: cover;
       
 }
+
 .title{
 
     margin-top: 20px;
     
 }
+
 #name{
     font-family: 'Press Start 2P', cursive;
     color: #FF9F01;
     text-shadow: #2A1702 3px 4px 1px;
     font-size: 50px;
+    margin-bottom: 35px;
     
 }
+
 .start{
     margin-top: 30px;
 }
+
 .btns{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin-top: 30px;
     
 }
+
 .btnsText{
     display: flex;
     justify-content: center;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-left: 50px;
+    margin-right: 40px;
 
 }
+
 .scores{
     display: flex;
     justify-content: center;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: -90px;
+    margin-right: -20px;
+    margin-left: -20px;
 }
+
 .feed .sleep .play{
    
     border: 1px solid black ;
 }
 
+.img-container{
+   position: sticky;
+   
+}
+
 .egg{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 377px;
+    visibility: visible;
+    
+   
+    
+}
+.charmander{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: 0;
+    left: 250px;
+    
+    visibility: hidden;
+    
+
+}
+
+.charmeleon{
+    position: relative;
     height: 250px;
     width: 250px;
-    margin-top: 30px;
+    left: 80px;
+    visibility: hidden;
+
 }
 
-.container{
-    height: 20px;
-    background-color: #ccc;
+.charizard{
     position: relative;
+    height: 350px;
+    width: 350px;
+    right: 270px;
+    visibility: hidden;
+    
 }
-
-.progress{
+/* 
+.container .progress{
     position: absolute;
     height: 100%;
+    width: 100%;
     background-color: #e30c0c;
     animation: progressAnimation 10s forwards;
 }
@@ -70,7 +116,7 @@ body{
 @keyframes progressAnimation {
     0% {width: 0%;}
     100% {width: 100%;}
-}
+} */
 h6{
     font-family: 'Press Start 2P', cursive;
     color: #2A1702;

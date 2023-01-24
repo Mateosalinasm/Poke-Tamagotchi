@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
         e.preventDefault()  
         newPet.hunger--  
         console.log(`${newPet.name} has been fed and feels much better! Hunger level = ${newPet.hunger}` )
-        if(newPet.hunger === 5){
+        if(newPet.hunger >= 5){
             alert(`${petName} is getting awfully hungry, feed him before he gets sick!`)
         } else if(newPet.hunger < 0){
             newPet.hunger === 0
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
         e.preventDefault()
         newPet.play--   
         console.log(`${newPet.name} has played and had so much fun! Boredom level = ${newPet.play}` ) 
-        if(newPet.play === 5){
+        if(newPet.play >= 5){
             alert(`${petName} is getting bored, play with him before he gets depressed!`)
         } else if(newPet.play < 0){
             newPet.play === 0
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
         e.preventDefault() 
         newPet.sleep--    
         console.log(`${newPet.name} has slept and feels refreshed! Fatigue level = ${newPet.sleep}` )
-        if(newPet.sleep === 5){
+        if(newPet.sleep >= 5){
             alert(`${petName} is getting sleepy, let him take a nap before he gets insomnia!`)
         } else if(newPet.sleep < 0){
             newPet.sleep === 0
@@ -82,22 +82,38 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
     }
 
     setTimeout(() => {
-        alert('Your pet is evolving!')
-        let charmander = document.querySelector('.egg').src = 'js/images/toppng.com-okemon-charmander-png-high-quality-image-cute-charmander-1105x1061.png'
-        charmander.style.width = '150px'
-        charmander.style.height = '150px'
+        alert(`${petName} is evolving!`)
+        document.querySelector('.egg').style.visibility = 'hidden'
+        // let charmander = document.querySelector('.egg').src = 'js/images/toppng.com-okemon-charmander-png-high-quality-image-cute-charmander-1105x1061.png'
     }, 10000);
+
     setTimeout(() => {
-        alert('Your pet is evolving!')
-        let charmeleon = document.querySelector('.egg').src = 'js/images/pngegg (1).png'
-        charmeleon.style.width = '200px'
-        charmeleon.style.height = '200px'
+        document.querySelector('.charmander').style.visibility = 'visible'
+        // let charmander = document.querySelector('.egg').src = 'js/images/toppng.com-okemon-charmander-png-high-quality-image-cute-charmander-1105x1061.png'
+    }, 10000);
+
+    setTimeout(() => {
+        alert(`${petName} is evolving!`)
+        document.querySelector('.charmander').style.visibility = 'hidden'
+        // let charmander = document.querySelector('.egg').src = 'js/images/toppng.com-okemon-charmander-png-high-quality-image-cute-charmander-1105x1061.png'
     }, 20000);
+
     setTimeout(() => {
-        alert('Your pet is evolving!')
-        let charizard = document.querySelector('.egg').src = 'js/images/pngegg (4).png'
-        charizard.style.width = '400px'
-        charizard.style.height = '400px'
+        
+        document.querySelector('.charmeleon').style.visibility = 'visible'
+        // let charmeleon = document.querySelector('.egg').src = 'js/images/pngegg (1).png'
+    }, 20000);
+
+    setTimeout(() => {
+        alert(`${petName} is evolving!`)
+        document.querySelector('.charmeleon').style.visibility = 'hidden'
+        // let charmeleon = document.querySelector('.egg').src = 'js/images/pngegg (1).png'
+    }, 35000);
+
+    setTimeout(() => {
+        
+        document.querySelector('.charizard').style.visibility = 'visible'
+        // let charizard = document.querySelector('.egg').src = 'js/images/pngegg (4).png'
     }, 35000);
     
     
