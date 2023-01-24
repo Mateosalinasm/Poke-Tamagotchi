@@ -11,7 +11,7 @@ body{
 }
 .title{
 
-    margin-top: 60px;
+    margin-top: 20px;
     
 }
 #name{
@@ -43,20 +43,37 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
 }
-.feed, .sleep, .play{
+.feed .sleep .play{
    
     border: 1px solid black ;
 }
 
-.egg, .charmander{
-    height: 200px;
-    width: 200px;
+.egg{
+    height: 250px;
+    width: 250px;
     margin-top: 30px;
 }
 
+.container{
+    height: 20px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.progress{
+    position: absolute;
+    height: 100%;
+    background-color: #e30c0c;
+    animation: progressAnimation 10s forwards;
+}
+
+@keyframes progressAnimation {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
 h6{
     font-family: 'Press Start 2P', cursive;
     color: #2A1702;
     text-shadow: #FF9F01 1px 1px 1px;
-    font-size: 15px;
+    font-size: 20px;
 }

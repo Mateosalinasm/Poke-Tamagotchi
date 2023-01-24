@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                 hungerScore.innerHTML = this.hunger
                 playScore.innerHTML = this.play
                 sleepScore.innerHTML = this.sleep
-            }, 3000)
+            }, 2000)
         }
     
     }
@@ -81,15 +81,26 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
         }
     }
 
-    function evolution(e){
-        e.preventDefault()
-        setTimeout(() => {
-            document.querySelector('.egg').src = 'js/images/toppng.com-okemon-charmander-png-high-quality-image-cute-charmander-1105x1061.png'
-        }, 20000);
-    } //NEED TO GET THIS FUNCTION TO WORK!!!
+    setTimeout(() => {
+        alert('Your pet is evolving!')
+        let charmander = document.querySelector('.egg').src = 'js/images/toppng.com-okemon-charmander-png-high-quality-image-cute-charmander-1105x1061.png'
+        charmander.style.width = '150px'
+        charmander.style.height = '150px'
+    }, 10000);
+    setTimeout(() => {
+        alert('Your pet is evolving!')
+        let charmeleon = document.querySelector('.egg').src = 'js/images/pngegg (1).png'
+        charmeleon.style.width = '200px'
+        charmeleon.style.height = '200px'
+    }, 20000);
+    setTimeout(() => {
+        alert('Your pet is evolving!')
+        let charizard = document.querySelector('.egg').src = 'js/images/pngegg (4).png'
+        charizard.style.width = '400px'
+        charizard.style.height = '400px'
+    }, 35000);
     
-    //Evolution
-
+    
     
     
 
