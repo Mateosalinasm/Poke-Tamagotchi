@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                 setInterval(() => {
                     this.age += 1
                     age.innerHTML = this.age
-                }, 6000); 
+                }, 5000); 
                 endGame = setInterval(() => {
                     this.hunger += 1
                     this.play += 1
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
         }
         
         
-        
+        alert('Welcome!!!\n\nThe rules are simple.\nYour pet has Hunger, Play, and Sleep buttons. When you see the scores get too high you must interact with your pet or it will die. As long as you give your pet so well deserved love and affection, you\'ll have a friend for life!\n\nHave Fun!!!')
         const petName = prompt('What\'s your Tamagotchis name?').toUpperCase()
         age.style.visibility = 'visible'
         const newPet = new Tamagotchi(petName)
