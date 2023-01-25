@@ -188,6 +188,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
         //Event Listeners for the background change
         sleep.addEventListener('click', () => {
             document.querySelector('.food').style.visibility = 'hidden'
+            document.querySelector('.toys').style.visibility = 'hidden'
             document.body.style.background = "url('https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/204364595/original/86db6005cd51b4f60e71cca277f603a82cf5646a/draw-a-pixel-pokemon-battle-background.png')"
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundRepeat = "no-repeat";
@@ -196,6 +197,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
         });
         play.addEventListener('click', () => {
             document.querySelector('.food').style.visibility = 'hidden'
+            document.querySelector('.toys').style.visibility = 'visible'
             document.body.style.background = "url('https://preview.redd.it/d9spuwer2c491.png?width=1050&format=png&auto=webp&v=enabled&s=f6b6908ea6b25b4914c6aadce02a54ed064f4ae9')"
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundRepeat = "no-repeat";
@@ -203,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
             document.body.style.filter = "brightness(100%)"
         })
         feed.addEventListener('click', () => {
+            document.querySelector('.toys').style.visibility = 'hidden'
             document.body.style.background = "url('https://preview.redd.it/d9spuwer2c491.png?width=1050&format=png&auto=webp&v=enabled&s=f6b6908ea6b25b4914c6aadce02a54ed064f4ae9')"
             document.body.style.backgroundSize = "cover";
             document.body.style.backgroundRepeat = "no-repeat";
