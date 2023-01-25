@@ -17,7 +17,7 @@ body{
     
 }
 
-#name{
+#name, .age{
     font-family: 'Press Start 2P', cursive;
     color: #FF9F01;
     text-shadow: #2A1702 3px 4px 1px;
@@ -27,6 +27,10 @@ body{
     
 }
 
+.age{
+    margin-top: -130px;
+    visibility: hidden;
+}
 
 .btns{
     display: flex;
@@ -178,4 +182,8 @@ h6{
     color: #2A1702;
     text-shadow: #FF9F01 1px 1px 1px;
     font-size: 20px;
+}
+
+.animate__zoomIn{
+    --animate-duration: 2s;
 }
