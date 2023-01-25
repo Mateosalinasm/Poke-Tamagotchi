@@ -10,9 +10,6 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
     let alertShownDead = false
     let endGame;
     
-   
-    
-
 //Class
     class Tamagotchi {
         constructor(name){
@@ -41,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                     clearTimeout(endGame)
                     document.querySelector('.charizard').style.visibility = 'hidden'
                     document.querySelector('.deadPet').style.visibility = 'visible'
+                    document.querySelector('.food').style.visibility = 'hidden'
                 }
                 //Pet gets to bored
                 if(newPet.play >= 10 && !alertShownBored){
@@ -56,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                     clearTimeout(endGame)
                     document.querySelector('.charizard').style.visibility = 'hidden'
                     document.querySelector('.deadPet').style.visibility = 'visible'
+                    document.querySelector('.food').style.visibility = 'hidden'
                 }
                 //Pet gets too tired
                 if(newPet.sleep >= 15 && !alertShownTired){
@@ -71,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                     clearTimeout(endGame)
                     document.querySelector('.charizard').style.visibility = 'hidden'
                     document.querySelector('.deadPet').style.visibility = 'visible'
+                    document.querySelector('.food').style.visibility = 'hidden'
                 }
             }, 2000)
         }
@@ -100,8 +100,6 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
         
     }
 
-  
-
     function petPlay (e){
         e.preventDefault()
         newPet.play--   
@@ -110,18 +108,12 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
 
     }
 
-    
-
     function petSleep (e){
         e.preventDefault() 
         newPet.sleep--    
         console.log(`${newPet.name} has slept and feels refreshed! Fatigue level = ${newPet.sleep}` )
         
     }
-
-    
-
-   
 
     setTimeout(() => {
         alert(`${petName} is evolving into baby Charmander! `)
@@ -185,10 +177,14 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
         document.body.style.backgroundSize = "cover";
         document.body.style.backgroundRepeat = "no-repeat";
         document.body.style.backgroundPosition = "center center";
-        document.body.style.background.filter = 'opacity(80%)'
         document.body.style.filter = "brightness(100%)"
     })
     feed.addEventListener('click', () => {
+        document.body.style.background = "url('https://preview.redd.it/d9spuwer2c491.png?width=1050&format=png&auto=webp&v=enabled&s=f6b6908ea6b25b4914c6aadce02a54ed064f4ae9')"
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "center center";
+        document.body.style.filter = "brightness(100%)"
         document.querySelector('.food').style.visibility = 'visible'
     })
 
