@@ -23,7 +23,7 @@ body{
     text-shadow: #2A1702 3px 4px 1px;
     font-size: 50px;
     margin-top: 0px;
-    margin-bottom: 110px;
+    margin-bottom: 150px;
     
 }
 
@@ -32,8 +32,8 @@ body{
     display: flex;
     justify-content: space-evenly;
     margin-top: -380px;
-    
-    
+    margin-bottom: -50px;
+
 }
 
 .btnsText{
@@ -43,6 +43,7 @@ body{
     justify-content: space-evenly;
     margin-left: 50px;
     margin-right: 40px;
+    margin-top: 40px;
 
 }
 
@@ -51,22 +52,25 @@ body{
     justify-content: center;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: -80px;
-    margin-bottom: 0px;
+    margin-top: -70px;
     margin-right: -20px;
     margin-left: -20px;
 }
 
-.feed .sleep .play{
+.feed, .play, .sleep{
    
-    border: 1px solid black ;
+    border: 2px solid black ;
+    border-radius: 5px;
+    margin-top: 100px;
+    
+ 
 }
 
 .img-container{
    position: sticky;
    height: 330px;
    margin-top: -10px;
-   margin-bottom: 40px;
+   margin-bottom: -20px;
    
    z-index: -1;
 }

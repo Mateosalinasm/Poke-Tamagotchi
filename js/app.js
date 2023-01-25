@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                     document.querySelector('.charizard').style.visibility = 'hidden'
                     document.querySelector('.deadPet').style.visibility = 'visible'
                     document.querySelector('.food').style.visibility = 'hidden'
+                    document.querySelector('.btns').style.visibility = 'hidden'
                     hungerScore.innerHTML = 'XXX'
                     playScore.innerHTML = 'XXX'
                     sleepScore.innerHTML = 'XXX'
@@ -58,9 +59,11 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                     document.querySelector('.charizard').style.visibility = 'hidden'
                     document.querySelector('.deadPet').style.visibility = 'visible'
                     document.querySelector('.food').style.visibility = 'hidden'
+                    document.querySelector('.btns').style.visibility = 'hidden'
                     hungerScore.innerHTML = 'XXX'
                     playScore.innerHTML = 'XXX'
                     sleepScore.innerHTML = 'XXX'
+
                 }
                 //Pet gets too tired
                 if(newPet.sleep >= 15 && !alertShownTired){
@@ -77,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                     document.querySelector('.charizard').style.visibility = 'hidden'
                     document.querySelector('.deadPet').style.visibility = 'visible'
                     document.querySelector('.food').style.visibility = 'hidden'
+                    document.querySelector('.btns').style.visibility = 'hidden'
                     hungerScore.innerHTML = 'XXX'
                     playScore.innerHTML = 'XXX'
                     sleepScore.innerHTML = 'XXX'
