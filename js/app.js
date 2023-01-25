@@ -39,6 +39,9 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                     document.querySelector('.charizard').style.visibility = 'hidden'
                     document.querySelector('.deadPet').style.visibility = 'visible'
                     document.querySelector('.food').style.visibility = 'hidden'
+                    hungerScore.innerHTML = 'XXX'
+                    playScore.innerHTML = 'XXX'
+                    sleepScore.innerHTML = 'XXX'
                 }
                 //Pet gets to bored
                 if(newPet.play >= 10 && !alertShownBored){
@@ -55,6 +58,9 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                     document.querySelector('.charizard').style.visibility = 'hidden'
                     document.querySelector('.deadPet').style.visibility = 'visible'
                     document.querySelector('.food').style.visibility = 'hidden'
+                    hungerScore.innerHTML = 'XXX'
+                    playScore.innerHTML = 'XXX'
+                    sleepScore.innerHTML = 'XXX'
                 }
                 //Pet gets too tired
                 if(newPet.sleep >= 15 && !alertShownTired){
@@ -71,6 +77,9 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                     document.querySelector('.charizard').style.visibility = 'hidden'
                     document.querySelector('.deadPet').style.visibility = 'visible'
                     document.querySelector('.food').style.visibility = 'hidden'
+                    hungerScore.innerHTML = 'XXX'
+                    playScore.innerHTML = 'XXX'
+                    sleepScore.innerHTML = 'XXX'
                 }
             }, 2000)
         }
