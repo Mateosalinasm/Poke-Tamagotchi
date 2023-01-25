@@ -1,4 +1,6 @@
-
+html, body {
+    margin: 0; height: 100%; overflow: hidden
+}
 body{
     text-align: center;
     background: url('https://preview.redd.it/d9spuwer2c491.png?width=1050&format=png&auto=webp&v=enabled&s=f6b6908ea6b25b4914c6aadce02a54ed064f4ae9') no-repeat center center fixed; 
@@ -20,18 +22,17 @@ body{
     color: #FF9F01;
     text-shadow: #2A1702 3px 4px 1px;
     font-size: 50px;
-    margin-bottom: 35px;
+    margin-top: -10px;
+    margin-bottom: 110px;
     
 }
 
-.start{
-    margin-top: 30px;
-}
 
 .btns{
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
+    margin-bottom: -30px;
     
 }
 
@@ -50,11 +51,16 @@ body{
     justify-content: center;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: -90px;
+    margin-top: -80px;
+    margin-bottom: 0px;
     margin-right: -20px;
     margin-left: -20px;
 }
 
+.sushi{
+    height: 100px;
+    border: 1px solid black;
+}
 .feed .sleep .play{
    
     border: 1px solid black ;
@@ -62,6 +68,9 @@ body{
 
 .img-container{
    position: sticky;
+   height: 330px;
+   margin-top: -80px;
+   margin-bottom: 50px;
    
 }
 
@@ -69,7 +78,7 @@ body{
     position: relative;
     height: 100px;
     width: 100px;
-    left: 377px;
+    left: 382px;
     visibility: visible;
     
    
@@ -79,9 +88,7 @@ body{
     position: relative;
     height: 150px;
     width: 150px;
-    top: 0;
     left: 250px;
-    
     visibility: hidden;
     
 
@@ -91,7 +98,7 @@ body{
     position: relative;
     height: 250px;
     width: 250px;
-    left: 80px;
+    left: 75px;
     visibility: hidden;
 
 }
@@ -102,6 +109,19 @@ body{
     width: 350px;
     right: 270px;
     visibility: hidden;
+    
+}
+
+.deadPet{
+    position: relative;
+    height: 250px;
+    bottom: 320px;
+    border-radius: 150px;
+    border: 2px solid rgb(253, 154, 25);
+    right: 0px;
+    box-shadow: 6px 4px 15px 7px black;
+    filter: sepia();
+    visibility: visible;
     
 }
 /* 
