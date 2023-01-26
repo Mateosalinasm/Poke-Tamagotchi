@@ -238,6 +238,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
             setTimeout(function() {
             document.querySelector('.charizard').classList.remove('animate__shakeY');
             }, 1000);
+            
         });
 
         //play Event Listeners for the animations
