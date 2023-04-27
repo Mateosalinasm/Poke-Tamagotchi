@@ -4,9 +4,9 @@ Project Description: Poke-Tamagotchi is a web application designed as a virtual 
 
 Transformations:
 
-![Egg](https://ibb.co/ZzPS8V2)
-![Charmander](https://ibb.co/KDsBD4j)
-![Charmeleon](https://ibb.co/bPMVvV8)
+![Egg](https://ibb.co/ZzPS8V2)<br/>
+![Charmander](file:///Users/mateosalinasm/Desktop/Screenshot%202023-04-27%20at%201.02.35%20PM.png)<br/>
+![Charmeleon](https://ibb.co/bPMVvV8)<br/>
 ![Charizard](https://ibb.co/pxvDGTW)
 
 Stretch Goals: Stretch goals for the app include: letting the user pick their Pokemon, changing the alerts so the pop ups are more aesthetically pleasing, make it responsive for smaller screens.
