@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                         playScore.innerHTML = 'XXX'
                         sleepScore.innerHTML = 'XXX'
                         age.style.visibility = 'hidden'
+                        document.querySelector('.toys').style.visibility = 'hidden'
                     }
                     //Pet gets to bored
                     if(newPet.play >= 10 && !alertShownBored){
@@ -73,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                         playScore.innerHTML = 'XXX'
                         sleepScore.innerHTML = 'XXX'
                         age.style.visibility = 'hidden'
+                        document.querySelector('.toys').style.visibility = 'hidden'
 
                     }
                     //Pet gets too tired
@@ -95,6 +97,7 @@ document.addEventListener("DOMContentLoaded", function() { //This lets the page 
                         playScore.innerHTML = 'XXX'
                         sleepScore.innerHTML = 'XXX'
                         age.style.visibility = 'hidden'
+                        document.querySelector('.toys').style.visibility = 'hidden'
                     } 
                 }, 2000)
             }
